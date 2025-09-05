@@ -1,8 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Separator } from '@/components/ui/separator';
 import {
   Users,
   BarChart3,
@@ -105,7 +103,7 @@ export function Sidebar({ className }: SidebarProps) {
       </div>
 
       {/* Navigation */}
-      <ScrollArea className="flex-1">
+      <div className="flex-1 overflow-y-auto">
         <div className="space-y-2 p-2">
           {menuItems.map((item) => {
             const isActive = location.pathname === item.href;
@@ -134,7 +132,7 @@ export function Sidebar({ className }: SidebarProps) {
             );
           })}
         </div>
-      </ScrollArea>
+      </div>
 
       {/* Footer */}
       <div className="border-t p-4">

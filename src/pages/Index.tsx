@@ -132,13 +132,13 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
               <h1 className="text-3xl font-bold">用户管理系统</h1>
-              <p className="text-admin-primary-foreground/80 mt-1">
+              <p className="text-white/80 mt-1">
                 管理和查看所有用户信息
               </p>
             </div>
             <Button
               onClick={() => setShowUserForm(true)}
-              className="bg-white text-admin-primary hover:bg-gray-100"
+              className="bg-white text-blue-600 hover:bg-gray-100"
             >
               <Plus className="h-4 w-4 mr-2" />
               新增用户
